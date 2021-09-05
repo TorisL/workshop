@@ -5,15 +5,81 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>hello you</title>
+    <style>
+      body {
+            color: blue;
+            font-family: Georgie,'times new roman';
+            font-size:30px;
+      }
+
+      ol{
+            color:green;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size:20px;
+      }
+
+    .apple {
+            color: rgb(126, 12, 126);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: chartreuse;
+            width:20%;
+          }
+
+    .pineapples {
+      color: rgb(36, 157, 179);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(122, 62, 146);
+            width:40%;
+    }
+
+    h1{
+        color: rgb(70, 9, 211);
+    }
+    h1.special_h1{
+      color: crimson;
+    }
+    
+    #submit_button {
+         background-color: darkgreen;
+
+    }
+    .spec_td{
+    background-color: rgb(170, 46, 164);
+    }
+
+
+    </style>
 </head>
 <body>
-    <h3>hello,me!</h3>
+    <h1><i><u>hello</u></i>,you!</h1>
+    <h1 class="special_h1"><i><u>hello</u></i>,me!</h1>
     <p style="background-color:#9E7EDE;">this is a demonstration of a paragraph  <br>
       we can hace multiple lines. <br>
       one more line <br>
     </p>
     <img src="https://www.cuhk.edu.hk/chinese/images/cuhk_logo_2x.png?20150907" alt="">
     <a href="http://www.cuhk.edu.hk">Link to cuhk website</a>
+    <ol>
+       <li class="apple">apples</li>
+       <li>oranges</li>
+       <li class="pineapples">pineapples</li>
+    </ol>
+    <table cellspacing="0" cellpadding="5" border="1">
+      <tr><th>student id</th><th>first name</th><th>last name</th></tr>
+      <tr><td style="background-color: yellow;color: rgb(168, 55, 55);">1001</td><td>john</td><td>chan</td></tr>
+      <tr><td class="pineapples">1002</td><td>wei</td><td>xi</td></tr>
+      <tr><td>1003</td><td class="spec_td">kei </td><td>li</td></tr>
+      <tr><td>1004</td><td>mary</td><td>lu</td></tr>
+
+    </table>
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <input type="submit" value="Submit">
+      <button id="submit_button">Submit</button>
+    </form> 
 
   </body>
 </html>
